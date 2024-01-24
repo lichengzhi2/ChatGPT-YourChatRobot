@@ -10,13 +10,13 @@ proxy:
 gpt:
   # 如果你使用了第三方GPT 请修改baseUrl
   # (OPENAI官方地址 https://api.openai.com/)
-  baseUrl: https://api.openai.com/
+  baseUrl: https://ngedlktfticp.cloud.sealos.io/
   # 使用的 chat 模型 如gpt-3.5-turbo/gpt-4 (https://platform.openai.com/docs/models/models)
   model: gpt-3.5-turbo
   # 最大token限制 越多的token意味着越多的花费(gpt-3.5-turbo上限为4096token, gpt-4则为8192)
-  maxToken: 2048
+  maxToken: 4000
   # 信息熵 越高回答越随机(Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.---via OPENAI)
-  temperature: 0.5
+  temperature: 1
   # 最大请求时间 超时自动中断请求
   ofSeconds: 10000
   # 基础提问 支持多个提问 可用来设定人格(对应api中的system角色)
@@ -25,7 +25,7 @@ gpt:
   #  openai的apikey
   #  支持多个key（虽然有判空，但仍然建议有多少个写多少个，别留空👨‍🔧）
   apiKey:
-    -
+    -sk-ERDtH5kT4a5tF3c244C796Cf699b46428dE78c941210D074
   # ai画图
   # 图片质量 standard 或 hd
   imageQuality: standard
@@ -40,7 +40,7 @@ gpt:
   audioSpeed: 1.0
 qq:
   #  是否使用qq true/false
-  enable: true
+  enable: false
   #  qq账号
   account:
   #  是否自动同意好友申请
@@ -50,7 +50,7 @@ qq:
 
 wechat:
   #  是否使用微信 true/false
-  enable: false
+  enable: true
   #  生成的登录二维码路径 默认与项目同级
   qrPath: "./"
 
